@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    private var refreshControl = UIRefreshControl()
     
     var dataSet = [ReceiveData.ContentData]()
     //Cell에 들어갈 데이터저장배열
@@ -18,6 +19,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if #available(iOS 10.0, *){
+            self.tableView.refreshControl = refreshControl
+        }else {
+            self.tableView.addSubview(refreshControl)
+        }
+        
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
         
         DataCommunication.shared.getDataList{
             responseData in // a.b 구조체
@@ -35,6 +44,25 @@ class ViewController: UIViewController {
         self.tableView.dataSource = self
         
         
+        
+    }
+    
+    @objc func refresh(){
+        
+        DataCommunication.shared.getDataList{
+            responseData in // a.b 구조체
+            
+            switch responseData{
+            case .success(let data) :// data가 b형(ContentData 배열
+                self.dataSet = data
+                self.tableView.reloadData() //reload
+                
+            case .failure(let Err) :
+                print(Err.localizedDescription)
+            }
+            
+        }
+        self.refreshControl.endRefreshing()
         
     }
 
