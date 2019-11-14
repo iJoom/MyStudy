@@ -25,6 +25,7 @@ class DataCommunication {
         let URL = BaseURL.ReceiveURL
         Alamofire.request(URL).responseJSON{ //중괄호 열고 클로저 함수를 써먹는거임
             response in
+           // response.response?.statusCode
             
             switch response.result {
                 

@@ -25,47 +25,48 @@ class ViewController: UIViewController {
         }else {
             self.tableView.addSubview(refreshControl)
         }
-        
+        refreshControl.attributedTitle = NSAttributedString(string : "Refreshing")
         refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+     
         
-        DataCommunication.shared.getDataList{
-            responseData in // a.b 구조체
-            
-            switch responseData{
-            case .success(let data) :// data가 b형(ContentData 배열
-                self.dataSet = data
-                self.tableView.reloadData() //reload
-                
-            case .failure(let Err) :
-                print(Err.localizedDescription)
-            }
-            
-        }
+        
         self.tableView.dataSource = self
         
         
         
     }
     
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        downloadData()
+    }
+    
     @objc func refresh(){
         
-        DataCommunication.shared.getDataList{
-            responseData in // a.b 구조체
-            
-            switch responseData{
-            case .success(let data) :// data가 b형(ContentData 배열
-                self.dataSet = data
-                self.tableView.reloadData() //reload
-                
-            case .failure(let Err) :
-                print(Err.localizedDescription)
-            }
-            
-        }
+        downloadData()
+       
         self.refreshControl.endRefreshing()
         
     }
 
+    func downloadData(){
+        
+        DataCommunication.shared.getDataList{
+                   responseData in // a.b 구조체
+                   
+                   switch responseData{
+                   case .success(let data) :// data가 b형(ContentData 배열
+                       self.dataSet = data
+                       self.tableView.reloadData() //reload
+                       
+                   case .failure(let Err) :
+                       print(Err.localizedDescription)
+                   }
+                   
+               }
+        
+    }
 }
 
 
