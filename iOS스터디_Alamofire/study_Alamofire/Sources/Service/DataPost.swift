@@ -15,7 +15,7 @@ class DataPost {
     
     static let shared = DataPost() //싱글턴
     
-    func postDataList(_ question: Int,_ userid: String,_ content:String ,completion: @escaping (NetWorkResult<Any, Error>) -> Void) {
+    func postDataList(_ question: Int,_ userid: String,_ content:String ,completion: @escaping (NetWorkResult<NewData, Error>) -> Void) {
         let header: HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
@@ -58,7 +58,7 @@ class DataPost {
                                 
                                     if result.result == 200{
                                         print("success")
-                                        completion(.success(result.result))
+                                        completion(.success(result))
                                 
                                         
                                     }else {

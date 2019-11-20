@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    
     private var refreshControl = UIRefreshControl()
     
     var dataSet = [ReceiveData.ContentData]()
