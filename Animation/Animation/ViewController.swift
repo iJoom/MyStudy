@@ -72,8 +72,9 @@ class ViewController: UIViewController {
           UIView.animate(withDuration: animationDuration, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveLinear, animations: {
                      self.helloLabel.alpha = 0
                      self.helloLabel.transform =
-                        self.helloLabel.transform.translatedBy(x: 0, y: -200)
+                        self.helloLabel.transform.translatedBy(x: 100, y: -200)
                  }  )
+        //비행기 오른쪽 대각선
         UIView.animate(withDuration: animationDuration, delay: 0.5, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveLinear, animations: {
                       self.introLabel.alpha = 0
                       self.introLabel.transform =
