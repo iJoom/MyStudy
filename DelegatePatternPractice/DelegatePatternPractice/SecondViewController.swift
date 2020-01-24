@@ -26,11 +26,11 @@ class SecondViewController: UIViewController {
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "goToSub" {
-      if let vc = segue.destination as? SubViewController {
-        vc.delegate = self
-      }
-    }
+//    if segue.identifier == "goToSub" {
+//      if let vc = segue.destination as? SubViewController {
+//        vc.delegate = self
+//      }
+//    }
   }
   
   
@@ -42,7 +42,14 @@ class SecondViewController: UIViewController {
   }
   
   @IBAction func goToSub(_ sender: Any) {
-    performSegue(withIdentifier: "goToSub", sender: nil)
+    //performSegue(withIdentifier: "goToSub", sender: nil)
+    
+    guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SubVC") as? SubViewController else { return  }
+    nextVC.delegate = self
+    
+    //self.navigationController?.pushViewController(nextVC, animated: true)
+    nextVC.modalPresentationStyle = .popover
+    self.navigationController?.present(nextVC, animated: true, completion: nil)
   }
   
 }

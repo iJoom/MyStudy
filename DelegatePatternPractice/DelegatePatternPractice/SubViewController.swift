@@ -8,28 +8,33 @@
 
 import UIKit
 
-protocol DataFlowDelegate {
-  func didSetData(text: String)
+protocol DataFlowDelegate: class {
+    func didSetData(text: String)
 }
 
 
 class SubViewController: UIViewController {
-  
-  var delegate: DataFlowDelegate?
-  
-  @IBOutlet weak var textField: UITextField!
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
     
+    var delegate: DataFlowDelegate?
     
-  }
-  
-  @IBAction func backToSecondAction(_ sender: Any) {
+    @IBOutlet weak var textField: UITextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+    }
+    
+    @IBAction func backToSecondAction(_ sender: Any) {
+        
+        
+        
     if let text = textField.text {
       self.delegate?.didSetData(text: text)
       dismiss(animated: true)
+      //  self.navigationController?.popViewController(animated: true)
     }
+   
   }
   //delegate를 이용한 뒷뷰로 데이터 전달
   

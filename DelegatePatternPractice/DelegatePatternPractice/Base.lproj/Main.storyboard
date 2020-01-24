@@ -130,7 +130,6 @@
                     <connections>
                         <outlet property="textField" destination="Dpa-wX-cXe" id="7pU-6g-Rga"/>
                         <segue destination="hy4-WW-oVW" kind="show" identifier="goToThird" id="ujl-v5-9b7"/>
-                        <segue destination="biZ-Wf-lM0" kind="presentation" identifier="goToSub" modalPresentationStyle="automatic" id="7fS-nj-IpR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m31-9Q-spS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -267,9 +266,9 @@
         <!--Sub View Controller-->
         <scene sceneID="CXL-r3-8Fz">
             <objects>
-                <viewController id="biZ-Wf-lM0" customClass="SubViewController" customModule="DelegatePatternPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SubVC" id="biZ-Wf-lM0" customClass="SubViewController" customModule="DelegatePatternPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bvG-oP-YWN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7V-k0-4Ac">

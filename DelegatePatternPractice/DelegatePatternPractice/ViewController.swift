@@ -27,7 +27,10 @@ class ViewController: UIViewController {
   }
   
   @IBAction func goToSecond(_ sender: Any) {
-    performSegue(withIdentifier: "goToSecond", sender: nil)
+//    performSegue(withIdentifier: "goToSecond", sender: nil)
+    guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController else { return }
+    self.navigationController?.pushViewController(nextVC, animated: true)
+    
   }
   
   @IBAction func goToCategory(_ sender: Any) {
