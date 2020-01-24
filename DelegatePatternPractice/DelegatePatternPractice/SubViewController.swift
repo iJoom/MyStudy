@@ -31,6 +31,6 @@ class SubViewController: UIViewController {
       dismiss(animated: true)
     }
   }
-  
+  //delegate를 이용한 뒷뷰로 데이터 전달
   
 }
