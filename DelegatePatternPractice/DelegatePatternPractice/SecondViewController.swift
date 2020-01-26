@@ -55,7 +55,7 @@ class SecondViewController: UIViewController {
 }
 
 extension SecondViewController: DataFlowDelegate {
-  func didSetData(text: String) {
+  func didSetData(_ text: String) {
     self.textField.text = text
   }
 }

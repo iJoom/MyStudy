@@ -85,6 +85,8 @@ class ViewController: UIViewController {
                       self.nameLabel.transform =
                    self.nameLabel.transform.translatedBy(x: 0, y: -200)
                   }  )
+        
+        
       }
  
 

@@ -9,13 +9,13 @@
 import UIKit
 
 protocol DataFlowDelegate: class {
-    func didSetData(text: String)
+    func didSetData(_ text: String)
 }
 
 
 class SubViewController: UIViewController {
     
-    var delegate: DataFlowDelegate?
+    weak var delegate: DataFlowDelegate?
     
     @IBOutlet weak var textField: UITextField!
     
@@ -30,7 +30,7 @@ class SubViewController: UIViewController {
         
         
     if let text = textField.text {
-      self.delegate?.didSetData(text: text)
+        self.delegate?.didSetData(text)
       dismiss(animated: true)
       //  self.navigationController?.popViewController(animated: true)
     }
