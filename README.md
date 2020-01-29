@@ -5,7 +5,6 @@ study iOS
 
  animate함수에서 alpha 값을 0으로 설정해서 이미지가 점점 흐려지게 연출. 
  
- 
  transform.translatedBy를 이용해 원하는 방향으로 이미지가 이동하게 연출. 
 
 ```swift
