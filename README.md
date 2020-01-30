@@ -3,8 +3,7 @@ study iOS
 
 # Animation
 
- animate함수에서 alpha 값을 0으로 설정해서 이미지가 점점 흐려지게 연출.
- 
+ animate함수에서 alpha 값을 0으로 설정해서 이미지가 점점 흐려지게 연출.<br />
  transform.translatedBy를 이용해 원하는 방향으로 이미지가 이동하게 연출. 
 
 ```swift
@@ -61,11 +60,8 @@ isExpanded 변수로 셀들이 확장된 상태인지 아닌지 확인
         
     }
 ```
-Section에 있는 Button을 눌렀을때 Data들이 펼쳐지거나, 닫혀지는 것이므로 
-
-각 tableView의 HeaderSection에 있는 Expandable하게 될 Button의 tag 값으로 Data들의 섹션값을 구별한다
-
-그리고 지정된 더미데이터의 크기 만큼 순차적으로 indexPath 배열을 만들어준다. 
-
+Section에 있는 Button을 눌렀을때 Data들이 펼쳐지거나, 닫혀지는 것이므로 <br />
+각 tableView의 HeaderSection에 있는 Expandable하게 될 Button의 tag 값으로 Data들의 섹션값을 구별한다.<br />
+그리고 지정된 더미데이터의 크기 만큼 순차적으로 indexPath 배열을 만들어준다.<br />
 왜 indexPaths 배열을 만드는가?<br />
 뒤에 사용될 deleteRows,insertRows 메소드의 indexPaths 파라미터는 indexPath로 이루어진 배열이므로.
