@@ -67,5 +67,5 @@ Section에 있는 Button을 눌렀을때 Data들이 펼쳐지거나, 닫혀지�
 
 그리고 지정된 더미데이터의 크기 만큼 순차적으로 indexPath 배열을 만들어준다. 
 
-왜 indexPaths 배열을 만드는가?  #
+왜 indexPaths 배열을 만드는가?<br />
 뒤에 사용될 deleteRows,insertRows 메소드의 indexPaths 파라미터는 indexPath로 이루어진 배열이므로.
