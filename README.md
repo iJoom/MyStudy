@@ -139,3 +139,8 @@ var indexPaths = [IndexPath]()
                   tableView.insertRows(at: indexPaths, with: .fade)
               }
 ```
+
+# 공부
+https://www.hackingwithswift.com/example-code/uikit/how-to-add-drag-and-drop-to-your-app
+
+2.2 예제 공부
