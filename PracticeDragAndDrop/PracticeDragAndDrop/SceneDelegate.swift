@@ -1,9 +1,9 @@
 //
 //  SceneDelegate.swift
-//  DragAndDropPractice
+//  PracticeDragAndDrop
 //
-//  Created by IJ . on 2019/12/30.
-//  Copyright © 2019 jun. All rights reserved.
+//  Created by IJ . on 2020/02/03.
+//  Copyright © 2020 jun. All rights reserved.
 //
 
 import UIKit
