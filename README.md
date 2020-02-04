@@ -144,3 +144,4 @@ var indexPaths = [IndexPath]()
 https://www.hackingwithswift.com/example-code/uikit/how-to-add-drag-and-drop-to-your-app
 
 2.2 예제 공부
+2.4 예제 직접 실습 및 코드 분석
