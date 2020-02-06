@@ -146,3 +146,4 @@ https://www.hackingwithswift.com/example-code/uikit/how-to-add-drag-and-drop-to-
 - [x] 2.2 예제 공부
 - [x] 2.4 예제 직접 실습 및 코드 분석
 - [ ] 2.5 Moya 통신 공부 계획
+- [x] 2.6 https://hcn1519.github.io/articles/2017-09/swift_escaping_closure escaping 클로저 공부
