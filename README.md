@@ -150,3 +150,4 @@ https://www.hackingwithswift.com/example-code/uikit/how-to-add-drag-and-drop-to-
 - [ ] 2.8 부코5 및 개발블로그 구상, 
 - [ ] Swift Map 공부
 - [x] 2.9 Closure 복습 및 부코5 Movie detail 통신 , View 구성
+- [ ] 2.10 부코5 진행
