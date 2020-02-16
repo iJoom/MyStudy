@@ -49,3 +49,4 @@ https://www.hackingwithswift.com/example-code/uikit/how-to-add-drag-and-drop-to-
 - [ ] Swift Map 공부
 - [x] 2.9 Closure 복습 및 부코5 Movie detail 통신 , View 구성
 - [ ] 2.10 부코5 진행 , 서버에서 오는 Data에 따른 유동적인 Label Size 구현
+- [ ] https://ontheswift.tistory.com/24 Cache 공부
