@@ -51,3 +51,4 @@ https://www.hackingwithswift.com/example-code/uikit/how-to-add-drag-and-drop-to-
 - [ ] 2.10 부코5 진행 , 서버에서 오는 Data에 따른 유동적인 Label Size 구현
 - [x] https://ontheswift.tistory.com/24 Cache 공부
 - [x] https://ontheswift.tistory.com/23?category=304724 CollectionView life cycle 및 PreFetching 공부
+- 문서작성
