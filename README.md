@@ -24,7 +24,6 @@ func animate2() {
 
 
 
-
 ***
 
 
@@ -52,3 +51,40 @@ https://www.hackingwithswift.com/example-code/uikit/how-to-add-drag-and-drop-to-
 - [x] https://ontheswift.tistory.com/24 Cache 공부
 - [x] https://ontheswift.tistory.com/23?category=304724 CollectionView life cycle 및 PreFetching 공부
 - 문서작성
+
+***
+
+- Cache 처리
+
+  ```swift
+  private let cache = NSCache<NSString, NSData>()
+  .....
+  func downloadImage(url: String, handler: @escaping(Data?, Error?) -> Void){
+              let cacheID = NSString(string: url)
+  
+              if let cachedData = cache.object(forKey: cacheID) {
+                  handler((cachedData as Data), nil)
+              }else{
+                  if let url = URL(string: url) {
+                      let session = URLSession(configuration: urlSessionConfig)
+                      var request = URLRequest(url: url)
+                      request.cachePolicy = .returnCacheDataElseLoad
+                      request.httpMethod = "get"
+                      session.dataTask(with: request) { (data, response, error) in
+                          if let _data = data {
+                              self.cache.setObject(_data as NSData, forKey: cacheID)
+                              handler(_data, nil)
+                          }else{
+                              handler(nil, error)
+                          }
+                          }.resume()
+                  } else {
+                      // NetworkError is a custom error
+                      handler(nil, NetworkError.invalidURL)
+                  }
+              }
+          }
+      }
+  ```
+
+  
