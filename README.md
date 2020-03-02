@@ -52,7 +52,7 @@ https://www.hackingwithswift.com/example-code/uikit/how-to-add-drag-and-drop-to-
 - [x] https://ontheswift.tistory.com/23?category=304724 CollectionView life cycle 및 PreFetching 공부
 - 문서작성
 - https://github.com/raywenderlich/swift-style-guide Swift style 공부
-
+- 3.1 UnixSystem 공부
 ***
 
 - Cache 처리
