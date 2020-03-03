@@ -4,7 +4,7 @@ var ary: [Int] = []
 
 ary.append(0)
 ary.append(2)
-
+// ary[0] = 1 안됨 , 안에 item들이 없기에 정말 빈 배열!
 print("\(ary[0]) \(ary[1])")
 
 struct test {
