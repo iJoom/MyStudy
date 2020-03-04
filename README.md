@@ -53,6 +53,7 @@ https://www.hackingwithswift.com/example-code/uikit/how-to-add-drag-and-drop-to-
 - 문서작성
 - https://github.com/raywenderlich/swift-style-guide Swift style 공부
 - 3.1 UnixSystem 공부
+- https://zetal.tistory.com/entry/swift-기초문법-15-맵Map-필터Filter-리듀스Reduce /Map Filter 공부
 ***
 
 - Cache 처리
