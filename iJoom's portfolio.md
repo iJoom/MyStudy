@@ -141,7 +141,7 @@
 
 ## 톡딱(나만의 여행경비 리포트 앱) - 25기 앱잼
 
-![톡딱gif](https://user-images.githubusercontent.com/55793344/85879457-5c43e980-b815-11ea-8966-5573eae72aaf.gif)
+<p align="center"><img src="https://user-images.githubusercontent.com/55793344/85879457-5c43e980-b815-11ea-8966-5573eae72aaf.gif")</p>
 
 * 대부분의 기능을 프로젝트 기간내에 완성시키며 많은 성장을 이루게한 프로젝트 입니다!
 
