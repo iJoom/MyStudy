@@ -1,23 +1,26 @@
-
-
-# 지속가능한 개발자 iJoom
+# 시작하면 끝을 보는 개발자 iJoom
 
 ***
 
 📱 ☕️ 와 🏊🏽 🏖 🏝를 좋아하는 황인준 입니다. 📱
 
+* 서울과학기술대학교 - IISE(산업정보시스템), 컴퓨터공학과 복수전공
+
 ***
 
-* [25기에서의 활동](https://publing.co.kr/74157658n4319)
-  * 서울과학기술대학교 - IISE(산업정보시스템), 컴퓨터공학과 복수전공
-  *  컴퓨터 학원에서 강사로 4년 경력 (C,C++,JAVA)
-  * 고등학교부터 공모전 및 교내 프로젝트 경험 다수
-  * iOS 데모 및 프로토타입 앱 개발 경험
+* [SOPT에서의 활동]
+
+  * iOS 데모 및 프로토타입 앱, 여행경비 레포트 톡딱앱 개발 경험
+
   * iOS파트 스터디장
-  * 엠티조 조장, 버디버디 , 행사조 모두 살아있습니다.
-  * 겨울왕국2 번개 기획 총 16명 참여
 
+  * 겨울왕국2 번개 기획 총 16명 참여 (개발도 노는 것도 열심히!)
 
+    <img src="https://user-images.githubusercontent.com/55793344/86096247-fe9dee80-baed-11ea-9685-c51711c27f49.jpg" width="400" />
+
+  
+
+* 대학생연합 창업 동아리 SOPT 25-26기수(2020) 활동중
 
 ***
 
@@ -42,6 +45,7 @@
 * 작년 11월 3일에 운동을 하기로 다짐했습니다.
 * 다짐 이후로 주 3~4회 지속적인 운동으로 달라진 몸과 건강을 느끼고 있습니다!
 * 처음엔 덤벨 4kg도 힘들었지만, 지금은 10kg 덤벨 두개로 운동을 하고 있어요!
+* 7kg 정도의 감량을 이뤄냈고, 달라진 몸에 가족들이 놀라고 있어요!
 
 > **모든 선택에 신중하지만, 그 만큼 선택에 대해서 책임을 가지고 끝까지 부딪혀 보는 성격입니다.**
 >
@@ -147,36 +151,107 @@
 
 * 대부분의 기능을 프로젝트 기간내에 완성시키며 많은 성장을 이루게한 프로젝트 입니다!
 
+> 톡딱을 만들며 힘들었던 점 및 코드 첨부
+
+```swift
+ @objc func handleExpandClose(button: UIButton) {
+        
+        let section = button.tag 
+        // button.tag 값을 이용해 섹션값 정의 , tableview각 버튼의 tag값 0부터 오름차순임
+        button.isSelected = !button.isSelected
+        
+        var indexPaths = [IndexPath]()
+        for row in twoDimensionalArray[section].cities.indices{
+            print(0,row)
+            let indexPath = IndexPath(row: row, section:  section)
+            indexPaths.append(indexPath)
+            
+        }
+        
+        let isExpanded = twoDimensionalArray[section].isExpanded
+        
+        twoDimensionalArray[section].isExpanded = !isExpanded
+        
+
+        if isExpanded{
+            tableView.deleteRows(at: indexPaths, with: .fade)
+            
+        } else{
+            tableView.insertRows(at: indexPaths, with: .fade)
+        }
+    }
+```
+
+* 처음으로 nib를 이용해 테이블뷰의 셀을 커스텀했고, tag를 이용해 ExpandableCellD을 이용해 직접 구현했습니다.
+* [드래그앤드랍 공부](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/2차%20스터디%20내용.md) 를 통해서, 기획자가 원했던 드래그앤 드랍 기능의 문제점을 말해주었고 결국 좋은 방향으로 해당 뷰의 기능을 개선 시켰습니다.
+* Moya를 사용해서 편리한 통신을 하기 위해 노력했습니다.
+
+```swift
+final class APIService {
+static let shared = APIService()
+private init() {}
+
+private let provider = MoyaProvider<APITarget>()
+
+func requestCityActivity(cityID: Int, completion: @escaping (Result<CityActivityResponseModel, Error>) -> Void) {
+      provider.request(.cityActivity(cityID: cityID)) { result in
+          switch result {
+          case let .success(success):
+              let responseData = success.data
+              do {
+                  let decoded = try JSONDecoder().decode(CityActivityResponseModel.self, from: responseData)
+                  completion(.success(decoded))
+              } catch {
+                  completion(.failure(error))
+              }
+          case let .failure(error):
+              completion(.failure(error))
+          }
+      }
+  }
+}
+```
+
+* 최대한 직관적인 코드를 위해 노력했습니다.
+* [Moya 개선 및 다시 공부](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/3차%20스터디.md)
+* [선택적인 뷰 활성화](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/12차%20스터디.md)
+* enumerated() 함수, Array의 값과 index를 통해 뷰를 구분하고 선택된 뷰만 값을 활성화 시켜 문제를 해결했습니다.
+
+```swift
+if selectedCategoryData.count == 0{
+            //go to next category flow
+            let vc = storyboard?.instantiateViewController(withIdentifier: "totalBudgetViewController") as! totalBudgetViewController
+             
+             self.navigationController?.pushViewController(vc, animated: true)
+        }
+        if selectedCategoryData.count > 0 {
+          //selectedCategoryData의 첫번째 데이터의 뷰로 푸쉬
+          //푸쉬 하면서 해당 뷰의 숫자 제거
+          // ex) 1,3,4,5 -> 3,4,5 -> 4,5
+        }
+```
+
+
+
 # 사이드 프로젝트 (ing)
 
 * 선택한 감정이나 상태로 Mind set을 도와주는 앱
+* 2명의 iOS개발자와 1명의 디자이너로 간단한 프로젝트를 기획하고 구상했습니다.
 
 <img width="1617" alt="스크린샷 2020-06-27 오전 1 31 06" src="https://user-images.githubusercontent.com/55793344/85879794-ed1ac500-b815-11ea-8ec3-862cb51c7950.png">
 
 ***
 
+# 6.27-7.18 SOPT - Project 산책 (진행중)
+
+![산책 포스터](https://user-images.githubusercontent.com/55793344/86091705-4ec58280-bae7-11ea-8ae9-9706d22ef479.png)
+
+* 독립서점과 무슨 활동이 이뤄지는지 큐레이션 해주는 앱
+* **의존성 주입 연습, 확실한 MVC 아키텍쳐**를 목표로 다시 보고싶은 코드로 프로젝트를 진행하는 것을 목표로 삼았습니다.
+* 또한, **앱스토어 '투데이'**에 셀이 펼쳐지면서 스크롤뷰가 되는 **애니메이션**을 직접 구현해서 큐레이션을 멋지게 표현 되도록 하려고 합니다. 
 
 
 
-
-<p align="center"><img src="https://user-images.githubusercontent.com/55793344/85882405-2e14d880-b81a-11ea-9929-550d9478beb3.png")</p>
-
-# (중요) 이번 앱잼의 큰 그림
-
-### 기디+개발자 회의를 통해 앱잼안에서 구현 가능한 베스트 결과물 및 기능 디자인
-
-### 저 개발도 잘하고 ,,,,
-
-### 👩🏻‍💻 🧑🏻‍💻 👨🏻‍💻 앱잼 발표전, 앱스토어 심사 제출 (앱잼기간 내에 릴리즈!)
-
-### 놀기도 잘합니다,,,
-
-### ✈️ 앱잼 끝나고, 제주도! 여행! (저만의 꿀잼 코스 보유) ✈️
-
-![R720x0](https://user-images.githubusercontent.com/55793344/85881347-6f0bed80-b818-11ea-96fd-892b263d168f.jpeg)
-
-
-![blogfiles naver net](https://user-images.githubusercontent.com/55793344/85881494-a9758a80-b818-11ea-9156-bc0821ec5c44.jpeg)
 
 ***
 
