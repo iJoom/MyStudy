@@ -233,23 +233,16 @@ if selectedCategoryData.count == 0{
 
 
 
-# 사이드 프로젝트 (ing)
 
-* 선택한 감정이나 상태로 Mind set을 도와주는 앱
-* 2명의 iOS개발자와 1명의 디자이너로 간단한 프로젝트를 기획하고 구상했습니다.
-
-<img width="1617" alt="스크린샷 2020-06-27 오전 1 31 06" src="https://user-images.githubusercontent.com/55793344/85879794-ed1ac500-b815-11ea-8ec3-862cb51c7950.png">
 
 ***
 
-# 6.27-7.18 SOPT - Project 산책 (진행중)
+# 6.27-7.18 SOPT - Project Cozy 
 
-![산책 포스터](https://user-images.githubusercontent.com/55793344/86091705-4ec58280-bae7-11ea-8ae9-9706d22ef479.png)
+![workflow](https://user-images.githubusercontent.com/55793344/87901981-63b48680-ca93-11ea-9ff4-cb03210efeef.png)
 
 * 독립서점과 무슨 활동이 이뤄지는지 큐레이션 해주는 앱
-* **의존성 주입 연습, 확실한 MVC 아키텍쳐**를 목표로 다시 보고싶은 코드로 프로젝트를 진행하는 것을 목표로 삼았습니다.
 * 또한, 앱스토어 '투데이'에 셀이 펼쳐지면서 스크롤뷰가 되는 **애니메이션**을 직접 구현해서 큐레이션을 멋지게 표현 되도록 하려고 합니다. 
-
 
 
 
