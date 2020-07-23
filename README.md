@@ -49,7 +49,32 @@ Model - Business Logic , Data
 
 View - 화면 담당 안에 Controller --(<-Delegate, ->Update) -- View
 
+***
 
+* 애플의 프레임워크와 라이브러리는 객체지향, Swift는 객체지향을 포함한 함수형 언어 (대표적 예시: 클로저)
+  * ***함수형프로그래밍?*** 함수를 메서드의 전달인자로 보내는 일 = 함수형 프로그래밍 패러다임에서 당연한 일
+  * 클로저의 실제 프로젝트에서의 예시, 컴플리션 핸들러 및 통신할 때
+  * 클로저 표현의 통상적 형식 
+
+```swift
+{ (매개변수들) -> 반환 타입 in
+    Code
+}
+```
+
+* 가독이 더 좋은 후행 클로저
+
+```swift
+let reversed: [String] = names.sorted {
+  return $0 > $1
+}
+```
+
+* 암시적 반환 표현 ( return 마저 생략 !!)
+
+```swift
+let reversed: [String] = names.sorted { $0 > $1 }
+```
 
 
 
