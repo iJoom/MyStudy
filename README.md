@@ -108,7 +108,33 @@ let reversed: [String] = names.sorted { $0 > $1 }
 
   * https://hcn1519.github.io/articles/2017-09/swift_escaping_closure
 
-  
+* Swift iOS APP Store Animation
+
+  * 구성 CollectionView - CollectionViewCell ( ShadowView 안에 CommonView)
+
+  * CommomView는 후에 DetailView와 공통적으료 사용되어짐
+
+  * ShadowView는 셀의 겉부분에 그림자를 주기 위함, 그냥 Cell을 커스텀한 XIB를 이용할시 Shadow가 적용되어지지 않음을 해결하기 위함
+
+  * 덤핑애니메이션을 이용해 DetailView로 전환, 이때 NavigationController를 Custom해서 Animation을 만들어줌, ***NavigationController의 UIPresentationController가 없으면 애니메이션 전환이 불가능***합니다. 이를 통해 사용자 정의 전환 애니메이션을 얻기 위함
+
+  * Animatable이라는 프로토콜을 만들어, sizeAnimator , positionAnimator를 구현하고 이를 이용해 커스텀 애니메이션을 만들어냅니다.
+
+    ```swift
+     // Put the completion handler on the longest lasting animator
+            if (self.positioningDuration > self.resizingDuration) {
+                positionAnimator.addCompletion(completionHandler)
+            } else {
+                sizeAnimator.addCompletion(completionHandler)
+            }
+    ```
+
+    * 가장 늦게 끝나는 곳에 핸들러를 대입합니다.
+    * 컬렉션뷰의 카드셀을 터치시, 디테일뷰가 셀처럼 보여지면서 화면의 전체크기로 리사이징 되면서 애니메이션이 적용되어집니다.
+
+
+
+***
 
 - https://github.com/raywenderlich/swift-style-guide Swift style 공부
 - https://zetal.tistory.com/entry/swift-기초문법-15-맵Map-필터Filter-리듀스Reduce /Map Filter 공부
