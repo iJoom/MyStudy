@@ -32,6 +32,25 @@ if let bindingNumber = num1 {
 ```
 
 * 디자인 패턴(http://blog.naver.com/jdub7138/220968244920)
+* singleton 패턴:  객체를 하나만 생성하여, 생성된 객체를 어디서든 참조할 수 있도록 하는 패턴
+
+```swift
+struct RecommendationService {
+    static let shared = RecommendationService()
+  	private init() {} // initializer를 private으로 설정하여 다른 곳에서 또 인스턴스를 생성하지 못하도록 해야한다. (Thread-safe) 출처: https://ppomelo.tistory.com/166 [ppomelo 🍐]
+
+  //통신 코드
+  //로그인 정보, 환경 설정 값 등 저장
+}
+```
+
+
+
+* delegate 패턴 설명 https://shark-sea.kr/entry/swift-delegate , https://velog.io/@delmasong/Delegate-pattern-in-iOS-x1k6f9jzx8
+
+  * 델리게이트 패턴은 쉽게 말해서, 객체 지향 프로그래밍에서 하나의 객체가 모든 일을 처리하는 것이 아니라 처리 해야 할 일 중 일부를 다른 객체에 넘기는 것을 뜻 합니다.
+
+    출처: https://zeddios.tistory.com/8 [ZeddiOS]
 
 * https://eunjin3786.tistory.com/31
 
