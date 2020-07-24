@@ -95,7 +95,20 @@ let reversed: [String] = names.sorted {
 let reversed: [String] = names.sorted { $0 > $1 }
 ```
 
+***
 
+* intrinsic contents size는?
+
+  * https://academy.realm.io/kr/posts/ios-autolayout/
+
+* auto closure는?
+
+  * https://mrgamza.tistory.com/579
+  * escaping closure?
+
+  * https://hcn1519.github.io/articles/2017-09/swift_escaping_closure
+
+  
 
 - https://github.com/raywenderlich/swift-style-guide Swift style 공부
 - https://zetal.tistory.com/entry/swift-기초문법-15-맵Map-필터Filter-리듀스Reduce /Map Filter 공부
