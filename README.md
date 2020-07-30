@@ -18,6 +18,7 @@
 - [x] https://ontheswift.tistory.com/23?category=304724 CollectionView life cycle 및 PreFetching 공부
 - [ ] 면접 준비 및 Swift 5책 및 다시 기초 대비
   * 옵셔널, 클로저, Swift 아키텍쳐, iOS 디자인 패턴
+- [x] 7.30 알고리즘 강의 보기 시작 
 
 ```swift
 var num1:Int? = 30
@@ -140,6 +141,7 @@ let reversed: [String] = names.sorted { $0 > $1 }
   * 둘다 오버라이딩이 가능한가? (static은 되지 않는다, 싱글턴 패턴은 오버라이딩 되지 않게 하는것)
 * 100개의 각기 다른 이미지뷰(스크롤되는)를 통신해서 받아올때, 다 업데이트 되지 않게 과정을 줄여보아라
   * NSCache key값을 이용해 key값이 다른 이미지뷰만 업데이트
+* What's git - Cherry-pick and rebase,revert
 
 
 
