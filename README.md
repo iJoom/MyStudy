@@ -18,7 +18,8 @@
 - [x] https://ontheswift.tistory.com/23?category=304724 CollectionView life cycle 및 PreFetching 공부
 - [ ] 면접 준비 및 Swift 5책 및 다시 기초 대비
   * 옵셔널, 클로저, Swift 아키텍쳐, iOS 디자인 패턴
-- [x] 7.30 알고리즘 강의 보기 시작 
+- [x] 7.30 알고리즘 강의 보기 시작 - 큐까지 완료
+- [x] 8.17 [RxSwift4시간 곰튀김님](https://www.youtube.com/watch?v=iHKBNYMWd5I) 강의 Start
 
 ```swift
 var num1:Int? = 30
