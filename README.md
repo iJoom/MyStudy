@@ -20,6 +20,10 @@
   * 옵셔널, 클로저, Swift 아키텍쳐, iOS 디자인 패턴
 - [x] 7.30 알고리즘 강의 보기 시작 - 큐까지 완료
 - [x] 8.17 [RxSwift4시간 곰튀김님](https://www.youtube.com/watch?v=iHKBNYMWd5I) 강의 Start
+  * 비동기적 결과값을 completion 클로저를 쓰지 않고, return으로 전달하는 유틸리티 그 중 Promise, bolt, Rxswift
+  * RxSwift: 나중에 생기는 데이터의 이름 -> Observable<String?>로 사용
+  * RxSwift는 비동기적 생기는 데이터를 컴플리션 클로저 X , return값으로 전달하기 위한 유틸리티이다.
+  * 강의 23:00
 
 ```swift
 var num1:Int? = 30
