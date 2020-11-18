@@ -22,6 +22,24 @@ class SwitchingViewController: UIViewController {
         blueViewController.view.frame = view.frame
         switchViewController(from: nil, to: blueViewController)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        DispatchQueue.main.async {
+            
+            DispatchQueue.global().async {
+                
+            }
+            
+        }
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        print("asdf")
+    }
     private func switchViewController(from fromVC:UIViewController?,
                                       to toVC:UIViewController?) {
         if fromVC != nil {
