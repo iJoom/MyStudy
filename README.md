@@ -19,6 +19,7 @@
 - [ ] 면접 준비 및 Swift 5책 및 다시 기초 대비
   * 옵셔널, 클로저, Swift 아키텍쳐, iOS 디자인 패턴
 - [x] 7.30 알고리즘 강의 보기 시작 - 큐까지 완료
+- [x] iOS 구조 및 면접, 생각해볼만한 내용 Study - Start 11월
 - [x] 8.17 [RxSwift4시간 곰튀김님](https://www.youtube.com/watch?v=iHKBNYMWd5I) 강의 Start
   * 비동기적 결과값을 completion 클로저를 쓰지 않고, return으로 전달하는 유틸리티 그 중 Promise, bolt, Rxswift
   * RxSwift: 나중에 생기는 데이터의 이름 -> Observable<String?>로 사용
