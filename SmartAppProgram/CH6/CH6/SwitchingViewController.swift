@@ -13,6 +13,8 @@ class SwitchingViewController: UIViewController {
     private var blueViewController: BlueViewController!
     private var yellowViewController: YellowViewController!
     
+    var testVar: String? = nil
+    let a: Optional<Int> = Int("ㅁ")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,8 @@ class SwitchingViewController: UIViewController {
             as! BlueViewController
         blueViewController.view.frame = view.frame
         switchViewController(from: nil, to: blueViewController)
+        
+        print(a)
     }
     
     override func viewWillAppear(_ animated: Bool) {
