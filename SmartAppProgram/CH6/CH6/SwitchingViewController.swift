@@ -15,6 +15,7 @@ class SwitchingViewController: UIViewController {
     
     var testVar: String? = nil
     let a: Optional<Int> = Int("ㅁ")
+    let testView = UIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,11 @@ class SwitchingViewController: UIViewController {
         switchViewController(from: nil, to: blueViewController)
         
         print(a)
+        
+        testView.contentHuggingPriority(for: .horizontal)
+        testView.setContentHuggingPriority(UILayoutPriority(rawValue: 980), for: .horizontal)
+        testView.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

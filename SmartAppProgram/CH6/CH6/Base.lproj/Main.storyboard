@@ -81,11 +81,21 @@
                                     <action selector="blueButtonPressedWithSender:" destination="i63-0p-bVp" eventType="touchUpInside" id="dfy-9I-s7A"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="980" text="Labelasdfasdfasd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPs-UY-1RW">
+                                <rect key="frame" x="132" y="122" width="135" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2hJ-1I-t6c"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
+                            <constraint firstItem="56b-v2-gGZ" firstAttribute="top" secondItem="fPs-UY-1RW" secondAttribute="bottom" constant="172.5" id="8aK-U3-aBa"/>
+                            <constraint firstItem="fPs-UY-1RW" firstAttribute="top" secondItem="2hJ-1I-t6c" secondAttribute="top" constant="122" id="X8h-Fo-LeK"/>
                             <constraint firstItem="56b-v2-gGZ" firstAttribute="centerX" secondItem="b9j-ms-aYu" secondAttribute="centerX" id="bRB-9a-CVM"/>
+                            <constraint firstItem="2hJ-1I-t6c" firstAttribute="trailing" secondItem="fPs-UY-1RW" secondAttribute="trailing" priority="950" constant="140" id="iYf-BO-WPj"/>
+                            <constraint firstItem="fPs-UY-1RW" firstAttribute="leading" secondItem="2hJ-1I-t6c" secondAttribute="leading" constant="132" id="jZ0-2U-U8O"/>
                             <constraint firstItem="56b-v2-gGZ" firstAttribute="centerY" secondItem="b9j-ms-aYu" secondAttribute="centerY" id="mXY-Ss-fn2"/>
                         </constraints>
                     </view>
