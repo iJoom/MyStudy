@@ -17,6 +17,23 @@ class SwitchingViewController: UIViewController {
     let a: Optional<Int> = Int("ㅁ")
     let testView = UIView()
     
+    var table1: UITableView!
+    var table2: UITableView!
+    
+    private let tableView: UITableView = {
+           let tableView = UITableView()
+           tableView.translatesAutoresizingMaskIntoConstraints = false
+           
+           return tableView
+       }()
+    
+    private let tableView2: UITableView = {
+           let tableView = UITableView()
+           tableView.translatesAutoresizingMaskIntoConstraints = false
+           
+           return tableView
+       }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +48,17 @@ class SwitchingViewController: UIViewController {
         testView.setContentHuggingPriority(UILayoutPriority(rawValue: 980), for: .horizontal)
         testView.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         
+        tableView.dataSource = self
+        tableView.rowHeight = 100
+        tableView.frame = CGRect(x: 0, y: 0, width: 150, height: 200)
+        tableView.backgroundColor = .blue
+        view.addSubview(tableView)
+        
+        
+        tableView2.dataSource = self
+        tableView2.frame = CGRect(x: 0, y: 250, width: 150, height: 200)
+        tableView2.backgroundColor = .black
+        view.addSubview(tableView2)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -117,4 +145,27 @@ class SwitchingViewController: UIViewController {
     
 
 
+}
+
+
+extension SwitchingViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if( tableView === self.tableView){
+            return 3
+        }
+        if ( tableView === tableView2) {
+            return 10
+        }
+        
+        //enum으로 test
+        //if , switch
+        return 0
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    
 }
