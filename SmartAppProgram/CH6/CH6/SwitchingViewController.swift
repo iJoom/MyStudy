@@ -9,9 +9,17 @@
 import UIKit
 
 class SwitchingViewController: UIViewController {
-
+    
+    enum divideTableView: Int {
+        case table1
+        case table2
+    }
+    
+    
     private var blueViewController: BlueViewController!
     private var yellowViewController: YellowViewController!
+    
+    var subDataSource = subTableViewDataSource()
     
     var testVar: String? = nil
     let a: Optional<Int> = Int("ㅁ")
@@ -55,10 +63,14 @@ class SwitchingViewController: UIViewController {
         view.addSubview(tableView)
         
         
-        tableView2.dataSource = self
+        tableView2.dataSource = subDataSource
         tableView2.frame = CGRect(x: 0, y: 250, width: 150, height: 200)
         tableView2.backgroundColor = .black
         view.addSubview(tableView2)
+        
+        
+    
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -150,12 +162,13 @@ class SwitchingViewController: UIViewController {
 
 extension SwitchingViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         if( tableView === self.tableView){
             return 3
         }
-        if ( tableView === tableView2) {
-            return 10
-        }
+//        if ( tableView === tableView2) {
+//            return 10
+//        }
         
         //enum으로 test
         //if , switch
@@ -169,3 +182,18 @@ extension SwitchingViewController: UITableViewDataSource {
     
     
 }
+class subTableViewDataSource: NSObject, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    
+}
+
+
+
