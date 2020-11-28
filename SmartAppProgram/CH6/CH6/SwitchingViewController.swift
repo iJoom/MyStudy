@@ -14,6 +14,7 @@ class SwitchingViewController: UIViewController {
         case table1
         case table2
     }
+    lazy var abc: Int = 2
     
     
     private var blueViewController: BlueViewController!
