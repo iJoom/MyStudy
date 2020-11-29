@@ -26,6 +26,7 @@
   * RxSwift는 비동기적 생기는 데이터를 컴플리션 클로저 X , return값으로 전달하기 위한 유틸리티이다.
   * 강의 2:10:23 PublishSubject Subject = Observable 밖에서 데이터를 컨트롤 해서 새로운 값을(next값)을 만들어 줄수 있다.
 - [x] generic 추가 공부 및 generic 제약 , equatable 상속 / 옵셔널 expression of nil을 포함하기에 nil을 받는다 , class도 추가한다면? nil 처리 OK 
+- [ ] 딕셔너리, 해쉬블 공부 딕셔너리 접근 속도 
   
 
 ```swift
