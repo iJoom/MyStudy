@@ -1,8 +1,4 @@
-[황인준 깃허브 링크](https://github.com/iJoom)
-
-***
-
-## 2020 여름 독립서점 소개 플랫폼 'Cozy'   [프로젝트링크](https://github.com/OurCozy/cozy-iOS)
+### 2020 여름 독립서점 소개 플랫폼 'Cozy'   [프로젝트링크](https://github.com/OurCozy/cozy-iOS)
 
 ***
 
@@ -14,20 +10,20 @@
 
 
 
-### 메인 추천 View
+> 메인 추천 View
 
 <img src="https://user-images.githubusercontent.com/55793344/101466348-62252580-3984-11eb-92c5-30ac66f824c5.png" width="350"> 
 
-### 디테일 View Animation 및 기능
+> 디테일 View Animation 및 기능
 
 <img src="https://user-images.githubusercontent.com/55793344/101466457-854fd500-3984-11eb-8786-c2899577b9ff.gif" width="300"><img width="300" alt="main3" src="https://user-images.githubusercontent.com/55793344/101466466-87b22f00-3984-11eb-94c4-209818c15591.gif">
 
-### APP Store Aniamtion 구현
+> APP Store Aniamtion 구현
 
 * 라이브러리를 사용하면, 코드와 동작방식 구조에 대한 이해 없이 사용할 것 같았습니다. 또한 불필요한 라이브러리 사용은 최소화 하고 싶었습니다.
 *  UIViewControllerAnimatedTransitioning을 Custom 하는 방식을 찾아서 공부하며 이해하고 사용하기 위해 노력했습니다.
 
-### 고민
+> 고민
 
 - 맨 처음 구조부터 생각을 하고 테스트를 먼저해봄
   - CollectionView를 Vertical Scroll로 만들고 Cell 선택되었을때, 셀이 펼쳐지는 구조로 생각
@@ -57,13 +53,13 @@ Detail View에서 닫기 버튼을 눌렀을 때 :
 
 <img width="984" alt="설명" src="https://user-images.githubusercontent.com/55793344/101485658-cc4ac400-399e-11eb-9582-8b835c2b3dbe.png">
 
-### 알게된 부분
+> 알게된 부분
 
  UIPresentationController: 뷰 사이를 전환 할 때 전환 수명이 지나도 표시되거나 표시되는 뷰를 조작하려는 경우 사용자 지정 UIPresentationController를 구현해야함.
 
 UIViewPropertyAnimator을 이용해 Detail View를 애니메이션하고 사이즈를 조절합니다.
 
-### Custom push animation 예시
+> push animation 예시
 
 ```swift
 let positionAnimator = UIViewPropertyAnimator(duration: self.positioningDuration, dampingRatio: 0.7)
@@ -86,7 +82,7 @@ let sizeAnimator = UIViewPropertyAnimator(duration: self.resizingDuration, curve
         }
 ```
 
-### [추천탭에서 사용자 닉네임과 추천멘트 부분을 다른 셀을 사용하여 다음과 같이 처리하였습니다.]
+[추천탭에서 사용자 닉네임과 추천멘트 부분을 다른 셀을 사용하여 다음과 같이 처리하였습니다.]
 
 ```swift
  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -123,7 +119,7 @@ let sizeAnimator = UIViewPropertyAnimator(duration: self.resizingDuration, curve
 
 ***
 
-### 네이버지도 라이브러리 사용
+> 네이버지도 라이브러리 사용
 
 * Xcode에서 한글로 설명이 나와서 놀랍고 쉽고 강력한 기능에 감격함.
 * 홈브루 및 lfs(대용량 파일 관리 라이브러리) 설치
@@ -134,6 +130,8 @@ NMFAuthManager.shared().clientId = "본인 clientId값"
 ```
 
 ***
+
+### 본격 지도 설정 시작
 
 * 스토리보드 or 코드로 네이버 NFMapView 만들어준다.
 * 그리고 아래와 같이 위도 경도를 이용해 마커지정이 가능하다.
@@ -226,13 +224,17 @@ let notificationCenter = NotificationCenter.default
 
 NotificationCenter를 이용해 다시 원래 Cozy앱이 Foreground 상태로 돌아올때 다시금 탭바를 사라지게 해주었습니다.
 
-#### [이슈관리 링크]
+[이슈관리 링크]
 
-[이와 같이 이슈를 사용하였습니다.](https://github.com/OurCozy/cozy-iOS/issues?q=is%3Aissue+is%3Aclosed+author%3AiJoom)
+이슈링크 확인
+
+[이와 같이 이슈를 사용하였습니다.](https://github.com/OurCozy/cozy-iOS/issues?q=is%3Aissue+is%3Aclosed)
 
 > 북마크 탭
 
 <img src="https://user-images.githubusercontent.com/55793344/101469643-59cee980-3988-11eb-9df9-a8ef23bcb11a.gif" width="300">
+
+> 마이페이지 탭 프로필 사진 업로드
 
 * 테이블뷰의 맞는 셀에 북마크가 되고 해제 되도록 도움을 주었습니다.
 
@@ -253,9 +255,15 @@ extension InterestViewController: ButtonActionDelegate {
 }
 ```
 
-### 마이페이지 탭 프로필 사진 업로드
+
+
+
+
+
 
 <img src="https://user-images.githubusercontent.com/55793344/101469576-402da200-3988-11eb-8b44-266ada62a3a1.png" width="350"><img src="https://user-images.githubusercontent.com/55793344/101469586-4459bf80-3988-11eb-846d-0f055b76b630.gif" width="300"> 
+
+
 
 * 팀원이 이미지 피커를 이용해 사진을 업로드 할 수 있도록 도움을 주었습니다.
 
@@ -290,7 +298,7 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
 
 ***
 
-## 2019 겨울 나만의 여행 경비 계산 앱 '톡딱'
+### 2019 겨울 나만의 여행 경비 계산 앱 '톡딱'
 
 ***
 
@@ -309,15 +317,11 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
 
 #### [구현 View]
 
-<img src="https://user-images.githubusercontent.com/37113547/71727601-246b7300-2e7e-11ea-8b7c-b50129b41c61.png" width="300"><img src="https://user-images.githubusercontent.com/37113547/71727612-2e8d7180-2e7e-11ea-88df-11a97d293ce8.png" width="300">
+<img src="https://user-images.githubusercontent.com/37113547/71727601-246b7300-2e7e-11ea-8b7c-b50129b41c61.png" width="350"><img src="https://user-images.githubusercontent.com/37113547/71727612-2e8d7180-2e7e-11ea-88df-11a97d293ce8.png" width="350">
 
 <img width="300" alt="스크린샷 2020-01-03 오후 10 34 29" src="https://user-images.githubusercontent.com/37113547/71727612-2e8d7180-2e7e-11ea-88df-11a97d293ce8.png"><img width="300" alt="스크린샷 2020-01-03 오후 10 35 23" src="https://user-images.githubusercontent.com/37113547/71727665-60063d00-2e7e-11ea-9f24-159c0494e19f.png"><img width="300" alt="스크린샷 2020-01-03 오후 10 35 32" src="https://user-images.githubusercontent.com/37113547/71727666-60063d00-2e7e-11ea-959f-75e2290ca231.png"><img width="300" alt="스크린샷 2020-01-03 오후 10 35 44" src="https://user-images.githubusercontent.com/37113547/71727701-79a78480-2e7e-11ea-9639-efcd545a440f.png"><img width="300" alt="스크린샷 2020-01-03 오후 10 36 02" src="https://user-images.githubusercontent.com/37113547/71727708-7dd3a200-2e7e-11ea-854f-26c69cfd4424.png"><img width="300" alt="스크린샷 2020-01-03 오후 10 36 31" src="https://user-images.githubusercontent.com/37113547/71727733-90e67200-2e7e-11ea-8442-5fe24feaf5aa.png"><img width="300" alt="스크린샷 2020-01-03 오후 11 36 57" src="https://user-images.githubusercontent.com/55793344/71729004-056ee000-2e82-11ea-8521-2fd86a5680c0.png">
 
 ***
 
-## 2019.10월 ~ Now iOS [스터디 링크](https://github.com/iOS-SOPT-iNNovation/iJoom)
-
-***
-
-
+### 
 
