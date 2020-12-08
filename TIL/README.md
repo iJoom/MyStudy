@@ -8,5 +8,6 @@
 - [ ] 노티피케이션 순차적 , 동기 테스트
 - [ ] 프로퍼티 didset
 - [ ] 킹피셔->NSCache Alamofire->URLSession 
-- ARkit 아이디어
+- [x] ARkit 아이디어 참고자료 찾음
+- [x] 포트폴리오 정리
 
