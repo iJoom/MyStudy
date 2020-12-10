@@ -16,7 +16,7 @@
 
 ### 메인 추천 View
 
-<img src="https://user-images.githubusercontent.com/55793344/101466348-62252580-3984-11eb-92c5-30ac66f824c5.png" width="350"> 
+<img src="https://user-images.githubusercontent.com/55793344/101466348-62252580-3984-11eb-92c5-30ac66f824c5.png" width="300"> 
 
 ### 디테일 View Animation 및 기능
 
@@ -85,6 +85,8 @@ let sizeAnimator = UIViewPropertyAnimator(duration: self.resizingDuration, curve
             fromView.transform = fromView.transform.concatenating(CGAffineTransform(translationX: xDiff, y: 0))
         }
 ```
+
+***
 
 ### [추천탭에서 사용자 닉네임과 추천멘트 부분을 다른 셀을 사용하여 다음과 같이 처리하였습니다.]
 
@@ -176,7 +178,7 @@ NMFAuthManager.shared().clientId = "본인 clientId값"
 * NaverMapAPI 설명이 한글로도 나와서 너무 잘표현 되어있음
 * CarmeraUpdate의 애니메이션 방식이 설정가능하고, 애니메이션를 얼마의 기간에 설정할지(Duration)까지 설정이 가능
 * NaverMapView의 mapType은 위성(새틀라이트),하이브리드(2D+3D위성을 섞은), basic은 우리가 흔히 보는 지도의 형태
-* 어떠한 줌단계의 래밸로 보여질지도 설정이 가능하며, 최소 최대의 줌레벨을 설정해서 과도하게 줌이 되거나 풀리는 경우를 제한 할 수 있다. ***minZoomLevel을 설정안해보고 최대한 zoom을 떙겨봤는데, 전국 단위를 넘어서까지 줌레벨이 낮아진다.***
+* 어떠한 줌단계의 래밸로 보여질지도 설정이 가능하며, 최소 최대의 줌레벨을 설정해서 과도하게 줌이 되거나 풀리는 경우를 제한 할 수 있다. ***minZoomLevel을 설정안해보고 최대한 zoom을 뒤로 땡겨보았는데, 전국 단위를 넘어서까지 줌레벨이 낮아진다.***
 
 ***
 
@@ -226,11 +228,15 @@ let notificationCenter = NotificationCenter.default
 
 NotificationCenter를 이용해 다시 원래 Cozy앱이 Foreground 상태로 돌아올때 다시금 탭바를 사라지게 해주었습니다.
 
+***
+
 #### [이슈관리 링크]
 
 [이와 같이 이슈를 사용하였습니다.](https://github.com/OurCozy/cozy-iOS/issues?q=is%3Aissue+is%3Aclosed+author%3AiJoom)
 
-> 북마크 탭
+***
+
+#### 북마크 탭
 
 <img src="https://user-images.githubusercontent.com/55793344/101469643-59cee980-3988-11eb-9df9-a8ef23bcb11a.gif" width="300">
 
@@ -252,6 +258,8 @@ extension InterestViewController: ButtonActionDelegate {
     }
 }
 ```
+
+***
 
 ### 마이페이지 탭 프로필 사진 업로드
 
@@ -309,13 +317,11 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
 
 #### [구현 View]
 
-<img src="https://user-images.githubusercontent.com/37113547/71727601-246b7300-2e7e-11ea-8b7c-b50129b41c61.png" width="300"><img src="https://user-images.githubusercontent.com/37113547/71727612-2e8d7180-2e7e-11ea-88df-11a97d293ce8.png" width="300">
-
-<img width="300" alt="스크린샷 2020-01-03 오후 10 34 29" src="https://user-images.githubusercontent.com/37113547/71727612-2e8d7180-2e7e-11ea-88df-11a97d293ce8.png"><img width="300" alt="스크린샷 2020-01-03 오후 10 35 23" src="https://user-images.githubusercontent.com/37113547/71727665-60063d00-2e7e-11ea-9f24-159c0494e19f.png"><img width="300" alt="스크린샷 2020-01-03 오후 10 35 32" src="https://user-images.githubusercontent.com/37113547/71727666-60063d00-2e7e-11ea-959f-75e2290ca231.png"><img width="300" alt="스크린샷 2020-01-03 오후 10 35 44" src="https://user-images.githubusercontent.com/37113547/71727701-79a78480-2e7e-11ea-9639-efcd545a440f.png"><img width="300" alt="스크린샷 2020-01-03 오후 10 36 02" src="https://user-images.githubusercontent.com/37113547/71727708-7dd3a200-2e7e-11ea-854f-26c69cfd4424.png"><img width="300" alt="스크린샷 2020-01-03 오후 10 36 31" src="https://user-images.githubusercontent.com/37113547/71727733-90e67200-2e7e-11ea-8442-5fe24feaf5aa.png"><img width="300" alt="스크린샷 2020-01-03 오후 11 36 57" src="https://user-images.githubusercontent.com/55793344/71729004-056ee000-2e82-11ea-8521-2fd86a5680c0.png">
+<img src="https://user-images.githubusercontent.com/37113547/71727601-246b7300-2e7e-11ea-8b7c-b50129b41c61.png" width="300"><img src="https://user-images.githubusercontent.com/37113547/71727612-2e8d7180-2e7e-11ea-88df-11a97d293ce8.png" width="300"><img width="300" alt="스크린샷 2020-01-03 오후 10 34 29" src="https://user-images.githubusercontent.com/37113547/71727612-2e8d7180-2e7e-11ea-88df-11a97d293ce8.png"><img width="300" alt="스크린샷 2020-01-03 오후 10 35 23" src="https://user-images.githubusercontent.com/37113547/71727665-60063d00-2e7e-11ea-9f24-159c0494e19f.png"><img width="300" alt="스크린샷 2020-01-03 오후 10 35 32" src="https://user-images.githubusercontent.com/37113547/71727666-60063d00-2e7e-11ea-959f-75e2290ca231.png"><img width="300" alt="스크린샷 2020-01-03 오후 10 35 44" src="https://user-images.githubusercontent.com/37113547/71727701-79a78480-2e7e-11ea-9639-efcd545a440f.png"><img width="300" alt="스크린샷 2020-01-03 오후 10 36 02" src="https://user-images.githubusercontent.com/37113547/71727708-7dd3a200-2e7e-11ea-854f-26c69cfd4424.png"><img width="300" alt="스크린샷 2020-01-03 오후 10 36 31" src="https://user-images.githubusercontent.com/37113547/71727733-90e67200-2e7e-11ea-8442-5fe24feaf5aa.png"><img width="300" alt="스크린샷 2020-01-03 오후 11 36 57" src="https://user-images.githubusercontent.com/55793344/71729004-056ee000-2e82-11ea-8521-2fd86a5680c0.png">
 
 ***
 
-## 2019.10월 ~ Now iOS [스터디 링크](https://github.com/iOS-SOPT-iNNovation/iJoom)
+## 2019.10월 ~ 현재 iOS [스터디 링크](https://github.com/iOS-SOPT-iNNovation/iJoom)
 
 ***
 
