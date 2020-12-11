@@ -10,4 +10,5 @@
 - [ ] 킹피셔->NSCache Alamofire->URLSession 
 - [x] ARkit 아이디어 참고자료 찾음
 - [x] 포트폴리오 정리
+- [x] 스터디 과제 공부 및 시험 공부
 
