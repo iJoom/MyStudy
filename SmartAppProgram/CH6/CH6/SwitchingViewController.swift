@@ -29,6 +29,8 @@ class SwitchingViewController: UIViewController {
     var table1: UITableView!
     var table2: UITableView!
     
+   
+    
     private let tableView: UITableView = {
            let tableView = UITableView()
            tableView.translatesAutoresizingMaskIntoConstraints = false
