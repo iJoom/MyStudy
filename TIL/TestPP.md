@@ -22,6 +22,8 @@
 
 <img src="https://user-images.githubusercontent.com/55793344/101466457-854fd500-3984-11eb-8786-c2899577b9ff.gif" width="300"><img width="300" alt="main3" src="https://user-images.githubusercontent.com/55793344/101466466-87b22f00-3984-11eb-94c4-209818c15591.gif">
 
+***
+
 ### APP Store Aniamtion 구현
 
 * 라이브러리를 사용하면, 코드와 동작방식 구조에 대한 이해 없이 사용할 것 같았습니다. 또한 불필요한 라이브러리 사용은 최소화 하고 싶었습니다.
@@ -34,9 +36,11 @@
   - 셀을 눌렀을때 애니메이션과, 스테이터스바 히든 등 아이폰 화면에 꽉차게 구현 완료
   - **그러나!** DetailView는 긴 스크롤이 필요해서, 이러한 구조로 구현시 불가능
 
-UIViewControllerAnimatedTransitioning : 커스텀 뷰 컨트롤러 전환을위한 애니메이션을 구현하기위한 메소드 set
+***
 
-이것을 이용해 원하는 Custom Animation 으로 동작하게 만듭니다. 커스텀NavigationController Class 를 만듭니다.UINavigationControllerDelegate 를 준수하고 AppStore Animation을 따르는 CustomTransitionAnimation로 작동하게 설계합니다. Spring Animation 과 CGAffineTransform 를 이용해 AppStore Animation 효과를 만듭니다.
+*UIViewControllerAnimatedTransitioning*: 커스텀 뷰 컨트롤러 전환을위한 애니메이션을 구현하기위한 메소드 set
+
+- 이것을 이용해 원하는 Custom Animation 으로 동작하게 만듭니다. 커스텀NavigationController Class 를 만듭니다.UINavigationControllerDelegate 를 준수하고 AppStore Animation을 따르는 CustomTransitionAnimation로 작동하게 설계합니다. Spring Animation 과 CGAffineTransform 를 이용해 AppStore Animation 효과를 만듭니다.
 
 #### [전체 순서]
 
