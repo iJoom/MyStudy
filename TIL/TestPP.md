@@ -244,7 +244,7 @@ NotificationCenter를 이용해 다시 원래 Cozy앱이 Foreground 상태로 �
 
 <img src="https://user-images.githubusercontent.com/55793344/101469643-59cee980-3988-11eb-9df9-a8ef23bcb11a.gif" width="300">
 
-* 테이블뷰의 맞는 셀에 북마크가 되고 해제 되도록 도움을 주었습니다.
+* 테이블뷰의 맞는 셀에 북마크가 되고 해제 되도록 Delegate 패턴을 이용하여 도움을 주었습니다.
 
 ```swift
 extension InterestViewController: ButtonActionDelegate {
@@ -255,13 +255,29 @@ extension InterestViewController: ButtonActionDelegate {
             guard let eachCell = tableView.cellForRow(at: indexPath) as? BookStoreTableViewCell else { return print("error") }
             eachCell.indexPath = IndexPath(row: index, section: 0)
         }
-        
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
     }
 }
 ```
+
+* 기존의 indexPath를 만들어서 배열을 만드는 방식과 달리
+
+```swift
+extension InterestViewController: DeleteButtonDelegate {
+    func interestCell(at cell: TestTableViewCell,didTapClickBookMarkButton: UIButton) {
+        
+        let indexPath = testTableView.indexPath(for: cell)
+       
+        if let indexPaths = indexPath {
+            bookStoreList.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPaths], with: .fade)
+        }
+        
+    }
+```
+
+* 셀을 받아서 indexPath를 찾고 deleteRos 해주는 방식으로 변경
+* 자연스러운 애니메이션을 위해 .fade 사용
+* Swift Delegate에 맞는 함수명을 네이밍하기 위해 노력
 
 ***
 
