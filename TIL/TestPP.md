@@ -262,7 +262,7 @@ extension InterestViewController: ButtonActionDelegate {
 * 기존의 indexPath를 만들어서 배열을 만드는 방식과 달리
 
 ```swift
-extension InterestViewController: DeleteButtonDelegate {
+extension InterestViewController: BookMarkButtonDelegate {
     func interestCell(at cell: TestTableViewCell,didTapClickBookMarkButton: UIButton) {
         
         let indexPath = testTableView.indexPath(for: cell)
