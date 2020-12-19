@@ -54,7 +54,7 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource {
 }
 
 extension ViewController: DeleteButtonDelegate {
-    func shouldTouchDeleteButton(at cell: TestTableViewCell) {
+    func interestCell(at cell: TestTableViewCell,didTapClickBookMarkButton: UIButton) {
         
         let indexPath = testTableView.indexPath(for: cell)
         print("델리게이트 indexPath값 \(indexPath)")

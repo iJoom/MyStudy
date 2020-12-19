@@ -10,7 +10,8 @@ import UIKit
 protocol DeleteButtonDelegate: AnyObject{
     func shouldTouchDeleteButton(at indexPath: IndexPath)
     
-    func shouldTouchDeleteButton(at cell: TestTableViewCell)
+    func interestCell(at cell: TestTableViewCell, didTapClickBookMarkButton: UIButton)
+    
     
 }
 
@@ -44,7 +45,7 @@ class TestTableViewCell: UITableViewCell {
 //            print("superview is not a UITableView - getIndexPath")
 //        }
         
-        self.delegate?.shouldTouchDeleteButton(at: self)
+        self.delegate?.interestCell(at: self,didTapClickBookMarkButton: sender)
        
     }
 }
