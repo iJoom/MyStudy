@@ -275,7 +275,7 @@ extension InterestViewController: BookMarkButtonDelegate {
     }
 ```
 
-* 셀을 받아서 indexPath를 찾고 deleteRos 해주는 방식으로 변경
+* 셀을 받아서 indexPath를 찾고 deleteRows 해주는 방식으로 변경
 * 자연스러운 애니메이션을 위해 .fade 사용
 * Swift Delegate에 맞는 함수명을 네이밍하기 위해 노력
 
