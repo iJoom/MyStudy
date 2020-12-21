@@ -3,19 +3,16 @@
     {
       "filename" : "seven.png",
       "idiom" : "universal",
-      "locale" : "Chap7Sevenimageset",
       "scale" : "1x"
     },
     {
       "filename" : "seven@2x.png",
       "idiom" : "universal",
-      "locale" : "Chap7Sevenimageset",
       "scale" : "2x"
     },
     {
       "filename" : "seven@3x.png",
       "idiom" : "universal",
-      "locale" : "Chap7Sevenimageset",
       "scale" : "3x"
     }
   ],

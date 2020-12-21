@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomPickerViewController: UIViewController {
+class CustomPickerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -3,19 +3,16 @@
     {
       "filename" : "dependenticon.png",
       "idiom" : "universal",
-      "locale" : "Chap7dependenticonimageset",
       "scale" : "1x"
     },
     {
       "filename" : "dependenticon@2x.png",
       "idiom" : "universal",
-      "locale" : "Chap7dependenticonimageset",
       "scale" : "2x"
     },
     {
       "filename" : "dependenticon@3x.png",
       "idiom" : "universal",
-      "locale" : "Chap7dependenticonimageset",
       "scale" : "3x"
     }
   ],

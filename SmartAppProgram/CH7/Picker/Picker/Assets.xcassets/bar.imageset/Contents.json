@@ -3,19 +3,16 @@
     {
       "filename" : "bar.png",
       "idiom" : "universal",
-      "locale" : "Chap7Barimageset",
       "scale" : "1x"
     },
     {
       "filename" : "bar@2x.png",
       "idiom" : "universal",
-      "locale" : "Chap7Barimageset",
       "scale" : "2x"
     },
     {
       "filename" : "bar@3x.png",
       "idiom" : "universal",
-      "locale" : "Chap7Barimageset",
       "scale" : "3x"
     }
   ],

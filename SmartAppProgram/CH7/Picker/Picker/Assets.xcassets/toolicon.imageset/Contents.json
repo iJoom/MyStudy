@@ -3,19 +3,16 @@
     {
       "filename" : "toolicon.png",
       "idiom" : "universal",
-      "locale" : "Chap7Tooliconimageset",
       "scale" : "1x"
     },
     {
       "filename" : "toolicon@2x.png",
       "idiom" : "universal",
-      "locale" : "Chap7Tooliconimageset",
       "scale" : "2x"
     },
     {
       "filename" : "toolicon@3x.png",
       "idiom" : "universal",
-      "locale" : "Chap7Tooliconimageset",
       "scale" : "3x"
     }
   ],
