@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "filename" : "singleicon.png",
+      "idiom" : "universal",
+      "locale" : "Chap7Singleiconimageset",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "singleicon@2x.png",
+      "idiom" : "universal",
+      "locale" : "Chap7Singleiconimageset",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "singleicon@3x.png",
+      "idiom" : "universal",
+      "locale" : "Chap7Singleiconimageset",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

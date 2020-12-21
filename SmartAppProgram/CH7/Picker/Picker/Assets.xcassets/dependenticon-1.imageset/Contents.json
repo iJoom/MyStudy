@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "filename" : "dependenticon.png",
+      "idiom" : "universal",
+      "locale" : "Chap7doubleiconimageset",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "dependenticon@2x.png",
+      "idiom" : "universal",
+      "locale" : "Chap7doubleiconimageset",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "dependenticon@3x.png",
+      "idiom" : "universal",
+      "locale" : "Chap7doubleiconimageset",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

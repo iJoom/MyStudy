@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "filename" : "clockicon.png",
+      "idiom" : "universal",
+      "locale" : "Chap7Clockiconimageset",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "clockicon@2x.png",
+      "idiom" : "universal",
+      "locale" : "Chap7Clockiconimageset",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "clockicon@3x.png",
+      "idiom" : "universal",
+      "locale" : "Chap7Clockiconimageset",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

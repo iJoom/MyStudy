@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "filename" : "crown.png",
+      "idiom" : "universal",
+      "locale" : "Chap7Crownimageset",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "crown@2x.png",
+      "idiom" : "universal",
+      "locale" : "Chap7Crownimageset",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "crown@3x.png",
+      "idiom" : "universal",
+      "locale" : "Chap7Crownimageset",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

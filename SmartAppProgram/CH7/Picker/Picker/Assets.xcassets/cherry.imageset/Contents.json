@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "filename" : "cherry.png",
+      "idiom" : "universal",
+      "locale" : "Chap7Cherryimageset",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "cherry@2x.png",
+      "idiom" : "universal",
+      "locale" : "Chap7Cherryimageset",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "cherry@3x.png",
+      "idiom" : "universal",
+      "locale" : "Chap7Cherryimageset",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
