@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5588AE802590F98F00C3577F /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5588AE7F2590F98F00C3577F /* statedictionary.plist */; };
+		5588AE832590FEB300C3577F /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5588AE822590FEB300C3577F /* crunch.wav */; };
+		5588AE862590FEC500C3577F /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5588AE852590FEC500C3577F /* win.wav */; };
 		55EC802F2590DB79001E5C01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC802E2590DB79001E5C01 /* AppDelegate.swift */; };
 		55EC80312590DB79001E5C01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC80302590DB79001E5C01 /* SceneDelegate.swift */; };
 		55EC80332590DB79001E5C01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC80322590DB79001E5C01 /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		5588AE7F2590F98F00C3577F /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statedictionary.plist; sourceTree = "<group>"; };
+		5588AE822590FEB300C3577F /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crunch.wav; sourceTree = "<group>"; };
+		5588AE852590FEC500C3577F /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
 		55EC802B2590DB79001E5C01 /* Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EC802E2590DB79001E5C01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55EC80302590DB79001E5C01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				55EC80462590DF24001E5C01 /* SingleComponentPickerViewController.swift */,
 				55EC80492590DF40001E5C01 /* DoubleComponentPickerViewController.swift */,
 				55EC804C2590DF57001E5C01 /* DependentComponentPickerViewController.swift */,
+				5588AE822590FEB300C3577F /* crunch.wav */,
+				5588AE852590FEC500C3577F /* win.wav */,
 				55EC804F2590DF67001E5C01 /* CustomPickerViewController.swift */,
 				5588AE7F2590F98F00C3577F /* statedictionary.plist */,
 				55EC80342590DB79001E5C01 /* Main.storyboard */,
@@ -142,8 +148,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5588AE832590FEB300C3577F /* crunch.wav in Resources */,
 				55EC803B2590DB7A001E5C01 /* LaunchScreen.storyboard in Resources */,
 				55EC80382590DB7A001E5C01 /* Assets.xcassets in Resources */,
+				5588AE862590FEC500C3577F /* win.wav in Resources */,
 				5588AE802590F98F00C3577F /* statedictionary.plist in Resources */,
 				55EC80362590DB79001E5C01 /* Main.storyboard in Resources */,
 			);

@@ -17,15 +17,16 @@ class DatePickerViewController: UIViewController {
         let date = NSDate()
         
         let date2 = Date()
-        datePicker.setDate(date2, animated: false)
+        datePicker.setDate(date as Date, animated: false)
     }
     
     @IBAction func onBUttonPressed(_ sender: UIButton) {
 
         
-        let date = datePicker.date
+        var date = datePicker.date
+        //date.addTimeInterval(-10800)
         
-        print(datePicker.date)
+        //print(datePicker.date)
        
         
         let message = "The date and time you selected is \(date)"
