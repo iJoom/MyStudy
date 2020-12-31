@@ -21,5 +21,5 @@
 - [x] Tranning iOS 7주차 완료
 - [x] 코테공부 28
 - [x] codility lessson 6 까지
-- [x] 코테 공부
+- [x] 알고리즘 문제 복습
 
