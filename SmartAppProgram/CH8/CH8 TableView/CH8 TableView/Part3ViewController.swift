@@ -7,18 +7,33 @@
 
 import UIKit
 
+class TestNIL: ExpressibleByNilLiteral {
+    required init(nilLiteral: ()) {
+        
+    }
+    
+    var A: Int = 5
+}
+
 class Part3ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     let sectionsTableIdentifier = "SectionsTableIdentifier"
     var names: [String: [String]]!
     var keys: [String]!
     
-  
+    var ab = TestNIL(nilLiteral: ())
+    var testing: Int?
+    
     
     var searchController: UISearchController!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        print(ab.A)
+        ab = nil
+        print(ab.A)
+        
+        
         tableView.delegate = self
         tableView.dataSource = self
         
