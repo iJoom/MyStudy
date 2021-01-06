@@ -328,7 +328,7 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
 * 앱의 뎁스가 깊어 계속 Data 전달을 Delegate 패턴을 이용하면 효율적이지 않다고 생각되어, Singleton 패턴을 사용하였습니다.
 * [ExpandableCell](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/1차%20발표내용%20(ExpandableCell).md)
 * [Drag and drop](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/2차%20스터디%20내용.md)
-* [NSCache를 이용한 이미지 캐싱처리](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/4차%20스터디%20.md)
+* [NSCache를 이용한 이미지 캐싱처리](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/6차%20스터디%20.md)
 * [XLPagerBar 적용](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/10차%20스터디.md)
 * [통신 Moya](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/3차%20스터디.md)
 * [선택적인 뷰 활성화](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/12차%20스터디.md)
