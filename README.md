@@ -46,9 +46,9 @@ if let bindingNumber = num1 {
 * singleton 패턴:  객체를 하나만 생성하여, 생성된 객체를 어디서든 참조할 수 있도록 하는 패턴
 
 ```swift
-struct RecommendationService {
+class RecommendationService {
     static let shared = RecommendationService()
-  	private init() {} // initializer를 private으로 설정하여 다른 곳에서 또 인스턴스를 생성하지 못하도록 해야한다. (Thread-safe) 출처: https://ppomelo.tistory.com/166 [ppomelo 🍐]
+  	private init() {} 
 
   //통신 코드
   //로그인 정보, 환경 설정 값 등 저장
