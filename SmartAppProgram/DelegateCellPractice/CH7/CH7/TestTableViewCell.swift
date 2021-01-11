@@ -15,6 +15,9 @@ protocol DeleteButtonDelegate: AnyObject{
     
 }
 
+Optional<Int>
+
+
 class TestTableViewCell: UITableViewCell {
 
     @IBOutlet weak var deleteButton: UIButton!
