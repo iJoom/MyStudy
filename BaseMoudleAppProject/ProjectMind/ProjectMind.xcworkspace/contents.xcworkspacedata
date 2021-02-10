@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:ProjectMind.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Core/Core.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FeatureRecords/FeatureRecords.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FeatureWrite/FeatureWrite.xcodeproj">
+   </FileRef>
+</Workspace>
