@@ -32,6 +32,17 @@ class SecondViewController: UIViewController {
         animate2()
         
         // 둘중 하나 flag == false ? animate() : animate2()
+        var a: Int = 4
+        var b: Int = 5
+        var c: String = "asdfdd"
+        
+        var ary: [Int] = [1,2,3,4,5]
+        var ary2: [Character] = ["a","b","c"]
+
+        withUnsafePointer(to: &a) { address in print(address) }
+        withUnsafePointer(to: &b) { address in print(address) }
+        withUnsafePointer(to: &c) { address in print(address) }
+        
     }
     
     
