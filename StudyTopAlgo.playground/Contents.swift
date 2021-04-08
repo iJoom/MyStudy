@@ -30,5 +30,21 @@ func solution(_ heights:[Int]) -> [Int]{
 
 var test: [Int] = [6,9,5,7,4]
 
-solution(test)
+// solution(test)
+
+
+var a: Int = 4
+var b: Int = 5
+var c: Int = 20
+var ary: [Int] = [1,2,3,4,5]
+var ary2: [Character] = ["a","b","c"]
+
+withUnsafePointer(to: &a) { address in print(address) }
+withUnsafePointer(to: &b) { address in print(address) }
+withUnsafePointer(to: &c) { address in print(address) }
+
+withUnsafePointer(to: &ary2[0]) { address in print(address) }
+withUnsafePointer(to: &ary2[1]) { address in print(address) }
+withUnsafePointer(to: &ary2[2]) { address in print(address) }
+
 
