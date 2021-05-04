@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 //var numbers = [4,3,2,6,1]
 //
@@ -37,3 +37,25 @@ let oddOrEvenDict = digitNames.map { (key, value) -> [Int: String] in
     return [key: str]
 }
 // oddOrEvenDict = [0:"짝수", 1:"홀수", ...] (순서가 보장되지는 않습니다.)
+
+
+
+class HTML {
+    var nameCount: Int? = 4
+    
+    func printNameCount() -> Void {
+        print(self.nameCount)
+    }
+}
+var x: HTML? = HTML()
+
+let testClosure: ()->Void = {
+    print(x?.nameCount)
+    x?.printNameCount()
+    x?.nameCount = 200
+}
+let ttClosure = { [weak x] in
+    x?.nameCount = 500
+}
+testClosure()
+print(x!.nameCount)
