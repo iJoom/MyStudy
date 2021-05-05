@@ -24,6 +24,7 @@ let oddOrEvenArr = digitNames.map { (key, value) -> String in
  
     return str
 }
+
 // oddOrEvenArr = ["짝수", "홀수", ...] (순서가 보장되지는 않습니다.)
 
 let oddOrEvenDict = digitNames.map { (key, value) -> [Int: String] in
@@ -37,7 +38,7 @@ let oddOrEvenDict = digitNames.map { (key, value) -> [Int: String] in
     return [key: str]
 }
 // oddOrEvenDict = [0:"짝수", 1:"홀수", ...] (순서가 보장되지는 않습니다.)
-
+print(oddOrEvenDict)
 
 
 class HTML {
