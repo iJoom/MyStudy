@@ -6,28 +6,7 @@
 
 ***
 
-- [x] 2.2 예제 공부
-- [x] 2.4 예제 직접 실습 및 코드 분석
-- [x] 2.5 Moya 통신 공부 계획
-- [x] 2.6 https://hcn1519.github.io/articles/2017-09/swift_escaping_closure escaping 클로저 공부
-- [ ] 2.8 부코5 및 개발블로그 구상, 
-- [ ] Swift Map 공부
-- [x] 2.9 Closure 복습 및 부코5 Movie detail 통신 , View 구성
-- [ ] 2.10 부코5 진행 , 서버에서 오는 Data에 따른 유동적인 Label Size 구현
-- [x] https://ontheswift.tistory.com/24 Cache 공부
-- [x] https://ontheswift.tistory.com/23?category=304724 CollectionView life cycle 및 PreFetching 공부
-- [ ] 면접 준비 및 Swift 5책 및 다시 기초 대비
-  * 옵셔널, 클로저, Swift 아키텍쳐, iOS 디자인 패턴
-- [x] 7.30 알고리즘 강의 보기 시작 - 큐까지 완료
-- [x] iOS 구조 및 면접, 생각해볼만한 내용 Study - Start 11월
-- [x] 8.17 [RxSwift4시간 곰튀김님](https://www.youtube.com/watch?v=iHKBNYMWd5I) 강의 Start
-  * 비동기적 결과값을 completion 클로저를 쓰지 않고, return으로 전달하는 유틸리티 그 중 Promise, bolt, Rxswift
-  * RxSwift: 나중에 생기는 데이터의 이름 -> Observable<String?>로 사용
-  * RxSwift는 비동기적 생기는 데이터를 컴플리션 클로저 X , return값으로 전달하기 위한 유틸리티이다.
-  * 강의 2:10:23 PublishSubject Subject = Observable 밖에서 데이터를 컨트롤 해서 새로운 값을(next값)을 만들어 줄수 있다.
-- [x] generic 추가 공부 및 generic 제약 , equatable 상속 / 옵셔널 expression of nil을 포함하기에 nil을 받는다 , class도 추가한다면? nil 처리 OK 
-- [ ] 딕셔너리, 해쉬블 공부 딕셔너리 접근 속도 
-- 함수형 람다식
+
   
 
 ```swift
@@ -159,8 +138,7 @@ let reversed: [String] = names.sorted { $0 > $1 }
 
 - https://github.com/raywenderlich/swift-style-guide Swift style 공부
 - https://zetal.tistory.com/entry/swift-기초문법-15-맵Map-필터Filter-리듀스Reduce /Map Filter 공부
-- 4.7 뷰컨 데이터별 분기처리 공부
-- 5.6 Onboarding 공부
+
 
 
 
