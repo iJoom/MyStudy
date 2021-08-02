@@ -9,6 +9,10 @@ import UIKit
 
 class SecondViewViewController: UIViewController {
 
+    var viewModel: Int = 0
+    
+   //static func로 ViewModel VC생성과 함께 초기화
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
