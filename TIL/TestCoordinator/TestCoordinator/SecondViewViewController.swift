@@ -9,17 +9,27 @@ import UIKit
 
 class SecondViewViewController: UIViewController {
 
-    var viewModel: Int = 0
+    private var viewModel: TestViewModel?
     
-   //static func로 ViewModel VC생성과 함께 초기화
+    //static func로 ViewModel VC생성과 함께 초기화
+    static func instantiate(_ viewModel: TestViewModel) -> UIViewController {
+        let secondStoryBoard = UIStoryboard(name: "SecondView", bundle: nil)
+        guard let secondViewController = secondStoryBoard.instantiateViewController(identifier: "SecondView") as? SecondViewViewController else {
+            return UIViewController()
+        }
+        secondViewController.viewModel = viewModel
+        
+        return secondViewController
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        
     }
     
-
+    
     /*
     // MARK: - Navigation
 

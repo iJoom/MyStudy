@@ -19,23 +19,25 @@ final class AppCoordinator {
     
     func start() {
         
-        let secondStoryBoard = UIStoryboard(name: "SecondView", bundle: nil)
-        let secondViewController = secondStoryBoard.instantiateViewController(identifier: "SecondView")
-        
-        
-       
-        
-        onLogIn = true
+        onLogIn = false
         
         if onLogIn ?? false {
-            window.rootViewController = UINavigationController(rootViewController: secondViewController)
+            window.rootViewController = UINavigationController(rootViewController: SecondViewViewController.instantiate(TestViewModel()))
         } else {
-            let navigationController = UINavigationController(rootViewController: ViewController.instantiate(viewModel: TestViewModel()))
+            let mainViewController = ViewController.instantiate(viewModel: TestViewModel(), coordiNator: self)
+            let navigationController = UINavigationController(rootViewController: mainViewController)
             navigationController.navigationBar.isHidden = true
             window.rootViewController = navigationController
         }
         
         
         window.makeKeyAndVisible()
+    }
+    
+    //다른View에서 Coordinator를 이용해 View 전환하는 법 고려해보기
+    //Coordinator 싱글턴... 흠?
+    
+    func moveToSecondView() {
+        print("go second view")
     }
 }

@@ -7,16 +7,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
+    weak var coordiNator: AppCoordinator?
     private var viewModel: TestViewModel?
     
-    static func instantiate(viewModel: TestViewModel) -> UIViewController {
+    static func instantiate(viewModel: TestViewModel, coordiNator: AppCoordinator) -> UIViewController {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         guard let viewController = storyBoard.instantiateViewController(identifier: "Main") as? ViewController else {
             return UIViewController()
         }
         viewController.viewModel = viewModel
+        viewController.coordiNator = coordiNator
         return viewController
     }
 
@@ -25,13 +27,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         print("ViewController ViewDidLoad()")
+        viewModel?.sayHello()
     }
 
     @IBAction func touchUpButton(_ sender: Any) {
         
-        let storyBoard = UIStoryboard(name: "SecondView", bundle: nil)
-        let nextViewController = storyBoard.instantiateViewController(identifier: "SecondView")
-        self.navigationController?.pushViewController(nextViewController, animated: true)
+        coordiNator?.moveToSecondView()
+//        let storyBoard = UIStoryboard(name: "SecondView", bundle: nil)
+//        let nextViewController = storyBoard.instantiateViewController(identifier: "SecondView")
+//        self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     
 }
