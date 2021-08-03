@@ -18,21 +18,20 @@ final class AppCoordinator {
     }
     
     func start() {
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let nextViewController = storyBoard.instantiateViewController(identifier: "Main")
         
         let secondStoryBoard = UIStoryboard(name: "SecondView", bundle: nil)
         let secondViewController = secondStoryBoard.instantiateViewController(identifier: "SecondView")
         
         
-        let navigationController = UINavigationController(rootViewController: nextViewController)
-        navigationController.navigationBar.isHidden = true
+       
         
         onLogIn = true
         
         if onLogIn ?? false {
             window.rootViewController = UINavigationController(rootViewController: secondViewController)
         } else {
+            let navigationController = UINavigationController(rootViewController: ViewController.instantiate(viewModel: TestViewModel()))
+            navigationController.navigationBar.isHidden = true
             window.rootViewController = navigationController
         }
         

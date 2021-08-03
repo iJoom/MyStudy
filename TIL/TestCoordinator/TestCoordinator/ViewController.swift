@@ -8,12 +8,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private var viewModel: TestViewModel?
+    
+    static func instantiate(viewModel: TestViewModel) -> UIViewController {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        guard let viewController = storyBoard.instantiateViewController(identifier: "Main") as? ViewController else {
+            return UIViewController()
+        }
+        viewController.viewModel = viewModel
+        return viewController
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        print("viewDidLoad()")
+        print("ViewController ViewDidLoad()")
     }
 
     @IBAction func touchUpButton(_ sender: Any) {

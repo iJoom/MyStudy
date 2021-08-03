@@ -16,6 +16,7 @@
 		5544D5EA26B7EFA0003659C6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5544D5E926B7EFA0003659C6 /* AppCoordinator.swift */; };
 		5544D5ED26B7F251003659C6 /* SecondView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5544D5EC26B7F251003659C6 /* SecondView.storyboard */; };
 		5544D5F026B7F276003659C6 /* SecondViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5544D5EF26B7F276003659C6 /* SecondViewViewController.swift */; };
+		5544D5F326B92E14003659C6 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5544D5F226B92E14003659C6 /* TestViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5544D5E926B7EFA0003659C6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		5544D5EC26B7F251003659C6 /* SecondView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondView.storyboard; sourceTree = "<group>"; };
 		5544D5EF26B7F276003659C6 /* SecondViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewViewController.swift; sourceTree = "<group>"; };
+		5544D5F226B92E14003659C6 /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				5544D5E926B7EFA0003659C6 /* AppCoordinator.swift */,
 				5544D5EC26B7F251003659C6 /* SecondView.storyboard */,
 				5544D5EF26B7F276003659C6 /* SecondViewViewController.swift */,
+				5544D5F226B92E14003659C6 /* TestViewModel.swift */,
 			);
 			path = TestCoordinator;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5544D5F326B92E14003659C6 /* TestViewModel.swift in Sources */,
 				5544D5EA26B7EFA0003659C6 /* AppCoordinator.swift in Sources */,
 				5544D5D926B7EF06003659C6 /* ViewController.swift in Sources */,
 				5544D5F026B7F276003659C6 /* SecondViewViewController.swift in Sources */,
