@@ -10,15 +10,15 @@ import UIKit
 class SecondViewViewController: UIViewController {
 
     private var viewModel: TestViewModel?
-    
+    weak var coordiNator: AppCoordinator?
     //static func로 ViewModel VC생성과 함께 초기화
-    static func instantiate(_ viewModel: TestViewModel) -> UIViewController {
+    static func instantiate(_ viewModel: TestViewModel,coordiNator: AppCoordinator ) -> UIViewController {
         let secondStoryBoard = UIStoryboard(name: "SecondView", bundle: nil)
         guard let secondViewController = secondStoryBoard.instantiateViewController(identifier: "SecondView") as? SecondViewViewController else {
             return UIViewController()
         }
         secondViewController.viewModel = viewModel
-        
+        secondViewController.coordiNator = coordiNator
         return secondViewController
     }
     

@@ -8,13 +8,14 @@
 import UIKit
 
 final class AppCoordinator {
-    
+    private var rvc: UINavigationController? {
+        return window.rootViewController as? UINavigationController
+    }
     private let window: UIWindow
     private var onLogIn: Bool?
     
     init(window: UIWindow) {
         self.window = window
-        self.onLogIn = false
     }
     
     func start() {
@@ -22,11 +23,11 @@ final class AppCoordinator {
         onLogIn = false
         
         if onLogIn ?? false {
-            window.rootViewController = UINavigationController(rootViewController: SecondViewViewController.instantiate(TestViewModel()))
+            window.rootViewController = UINavigationController(rootViewController: SecondViewViewController.instantiate(TestViewModel(),coordiNator: self))
         } else {
             let mainViewController = ViewController.instantiate(viewModel: TestViewModel(), coordiNator: self)
             let navigationController = UINavigationController(rootViewController: mainViewController)
-            navigationController.navigationBar.isHidden = true
+            navigationController.navigationBar.isHidden = false
             window.rootViewController = navigationController
         }
         
@@ -38,6 +39,11 @@ final class AppCoordinator {
     //Coordinator 싱글턴... 흠?
     
     func moveToSecondView() {
-        print("go second view")
+        let secondViewController = SecondViewViewController.instantiate(TestViewModel(),coordiNator: self)
+//        window.rootViewController.pushViewController(secondViewController, animated: true)
+        let secondView = window.rootViewController as? UINavigationController
+            secondView?.pushViewController(secondViewController, animated: true)
+        
+        print("moveToSecondView")
     }
 }
