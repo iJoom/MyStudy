@@ -17,6 +17,8 @@
 		5544D5ED26B7F251003659C6 /* SecondView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5544D5EC26B7F251003659C6 /* SecondView.storyboard */; };
 		5544D5F026B7F276003659C6 /* SecondViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5544D5EF26B7F276003659C6 /* SecondViewViewController.swift */; };
 		5544D5F326B92E14003659C6 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5544D5F226B92E14003659C6 /* TestViewModel.swift */; };
+		5544D5F626BAF0AC003659C6 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5544D5F526BAF0AC003659C6 /* ThirdViewController.swift */; };
+		5544D5F926BAF0B7003659C6 /* ThirdStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5544D5F826BAF0B7003659C6 /* ThirdStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		5544D5EC26B7F251003659C6 /* SecondView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondView.storyboard; sourceTree = "<group>"; };
 		5544D5EF26B7F276003659C6 /* SecondViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewViewController.swift; sourceTree = "<group>"; };
 		5544D5F226B92E14003659C6 /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
+		5544D5F526BAF0AC003659C6 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		5544D5F826BAF0B7003659C6 /* ThirdStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				5544D5EC26B7F251003659C6 /* SecondView.storyboard */,
 				5544D5EF26B7F276003659C6 /* SecondViewViewController.swift */,
 				5544D5F226B92E14003659C6 /* TestViewModel.swift */,
+				5544D5F526BAF0AC003659C6 /* ThirdViewController.swift */,
+				5544D5F826BAF0B7003659C6 /* ThirdStoryboard.storyboard */,
 			);
 			path = TestCoordinator;
 			sourceTree = "<group>";
@@ -138,6 +144,7 @@
 			files = (
 				5544D5E126B7EF09003659C6 /* LaunchScreen.storyboard in Resources */,
 				5544D5DE26B7EF09003659C6 /* Assets.xcassets in Resources */,
+				5544D5F926BAF0B7003659C6 /* ThirdStoryboard.storyboard in Resources */,
 				5544D5DC26B7EF06003659C6 /* Main.storyboard in Resources */,
 				5544D5ED26B7F251003659C6 /* SecondView.storyboard in Resources */,
 			);
@@ -153,6 +160,7 @@
 				5544D5F326B92E14003659C6 /* TestViewModel.swift in Sources */,
 				5544D5EA26B7EFA0003659C6 /* AppCoordinator.swift in Sources */,
 				5544D5D926B7EF06003659C6 /* ViewController.swift in Sources */,
+				5544D5F626BAF0AC003659C6 /* ThirdViewController.swift in Sources */,
 				5544D5F026B7F276003659C6 /* SecondViewViewController.swift in Sources */,
 				5544D5D526B7EF06003659C6 /* AppDelegate.swift in Sources */,
 				5544D5D726B7EF06003659C6 /* SceneDelegate.swift in Sources */,
