@@ -22,6 +22,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lph-we-PC8">
+                                <rect key="frame" x="177" y="551" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next Third"/>
+                                <connections>
+                                    <action selector="touchUpMoveThirdView:" destination="yag-8f-uyB" eventType="touchUpInside" id="Zwq-K4-aDa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfL-H6-jUy">
+                                <rect key="frame" x="190" y="323" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="touchUpBackButton:" destination="yag-8f-uyB" eventType="touchUpInside" id="Kqr-qi-Q7b"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yOd-Pc-jA1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

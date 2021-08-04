@@ -29,7 +29,14 @@ class SecondViewViewController: UIViewController {
         
     }
     
+    @IBAction func touchUpMoveThirdView(_ sender: Any) {
+        coordiNator?.moveToThirdView()
+        
+    }
     
+    @IBAction func touchUpBackButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 
