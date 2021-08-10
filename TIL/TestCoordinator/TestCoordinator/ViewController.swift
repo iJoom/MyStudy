@@ -9,8 +9,8 @@ import UIKit
 
 final class ViewController: UIViewController {
     
-    weak var coordiNator: AppCoordinator?
-    private var viewModel: TestViewModel?
+    private weak var coordiNator: AppCoordinator?
+    private weak var viewModel: TestViewModel?
     
     static func instantiate(viewModel: TestViewModel, coordiNator: AppCoordinator) -> UIViewController {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
