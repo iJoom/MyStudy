@@ -26,7 +26,7 @@ final class AppCoordinator {
         } else {
             let mainViewController = ViewController.instantiate(viewModel: TestViewModel(), coordiNator: self)
             let navigationController = UINavigationController(rootViewController: mainViewController)
-            navigationController.navigationBar.isHidden = false
+            navigationController.navigationBar.isHidden = true
             window.rootViewController = navigationController
         }
         
