@@ -7,11 +7,16 @@
 
 import Foundation
 
+extension String {
+    subscript(_ index: Int) -> Character {
+        return self[self.index(self.startIndex, offsetBy: index)]
+    }
+}
 var repetitionWords: Array<String> = []
 
-var testString: String? = "asdf"
+var testString = "asdf"
 
-print(testString!.last!)
+print(testString[0])
 
 func solution(_ n:Int, _ words:[String]) -> [Int] {
     var count: Int = 1
